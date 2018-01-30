@@ -1,2 +1,1 @@
-# ddns_dhcp
-Dynamic DNS and DHCP (bind9 &amp; isc-dhcp-server)
+# Dynamic DNS and DHCP (bind9 & isc-dhcp-server)
