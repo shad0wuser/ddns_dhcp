@@ -1,0 +1,14 @@
+;
+; BIND reverse data file for domain.lan 
+;
+$TTL		10800
+$ORIGIN		1.168.192.in-addr.arpa.
+@		IN	SOA	srv1.domain.lan. root.domain.lan. (
+				101605;
+				3h;
+				1h;
+				1w;
+				1h);
+;		
+@		IN	NS	srv1.domain.lan.
+254		IN	PTR	srv1.domain.lan.
