@@ -1,5 +1,12 @@
 # Dynamic DNS and DHCP (bind9 & isc-dhcp-server)
 Copy/Modify the configuration files
+```bash
+apt-get install git
+git clone https://github.com/shad0wuser/ddns_dhcp.git
+cp -r ddns_dhcp/dhcp /etc/
+cp -r ddns_dhcp/bind /etc/
+```
+
 
 ## Generating the key to secure DNS / DHCP exchanges
 ```bash
