@@ -12,6 +12,7 @@ chown -R bind:bind /etc/bind
 
 ## Generating the key to secure DNS / DHCP exchanges
 
+Generate your secret key
 ```bash
 dnssec-keygen -a HMAC-MD5 -b 128 -r /dev/urandom -n USER DDNS_UPDATE
 ```
