@@ -21,7 +21,7 @@ It will generate two key files. Just copy the **key** in `Kddns_update.+157+5708
 The both files `/etc/bind/ddns.key` and `/etc/dhcp/ddns.key` must be identical.
 
 ## Change configuration files, replace with your values and run
-```bash
+``bash
 services bind9 restart
 service isc-dhcp-server restart
-```
+``
