@@ -6,19 +6,21 @@
 // organization
 //include "/etc/bind/zones.rfc1918";
 
-include "/etc/bind/ddns.key";
+// include "/etc/bind/ddns.key";
 
-zone "domain.lan" {
+zone "domain.local" {
 	type master;
-	allow-update { key DDNS_UPDATE; };
+	allow-update { 192.168.1.0/24; };
+//	allow-update { key DDNS_UPDATE; };
 	allow-query { any; };
 	notify no;
-	file "/etc/bind/db.domain.lan";
+	file "/etc/bind/db.domain.local";
 };
 
 zone "1.168.192.in-addr.arpa" {
 	type master;
-	allow-update { key DDNS_UPDATE; };
+	allow-update { 192.168.1.0/24; };
+//	allow-update { key DDNS_UPDATE; };
 	allow-query { any; };
 	notify no;
 	file "/etc/bind/db.1.168.192.in-addr.arpa";
