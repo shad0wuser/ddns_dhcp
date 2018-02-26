@@ -1,10 +1,12 @@
 # Dynamic DNS and DHCP (bind9 & isc-dhcp-server)
 Copy/Modify the configuration files
 ```bash
-apt-get install git
+apt update
+apt install bind9 isc-dhcp-server git
 git clone https://github.com/shad0wuser/ddns_dhcp.git
 cp -r ddns_dhcp/dhcp /etc/
 cp -r ddns_dhcp/bind /etc/
+chown -R bind:bind /etc/bind
 ```
 
 
@@ -16,4 +18,8 @@ It will generate two key files. Just copy the **key** in `Kddns_update.+157+5708
 
 The both files `/etc/bind/ddns.key` and `/etc/dhcp/ddns.key` must be identical.
 
-**Supported by Sofiane**
+## Change configuration files, replace with your values and run
+```bash
+services bind9 restart
+service isc-dhcp-server restart
+```
