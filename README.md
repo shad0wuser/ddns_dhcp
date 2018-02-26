@@ -8,7 +8,7 @@ git clone https://github.com/shad0wuser/ddns_dhcp.git
 cp -r ddns_dhcp/dhcp /etc/
 cp -r ddns_dhcp/bind /etc/
 
-cp -r ddns_dhcp/etc/* /etc
+cp -r ddns_dhcp/etc/* /etc/
 
 chown -R bind:bind /etc/bind
 ```
